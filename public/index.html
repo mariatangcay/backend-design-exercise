@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>User Management</title>
+</head>
+<body>
+    <div class="container">
+        <h1>User Management</h1>
+        
+        <div id="register-section" class="section">
+            <h2>Register</h2>
+            <input type="text" id="register-username" placeholder="Username" required>
+            <input type="password" id="register-password" placeholder="Password" required>
+            <input type="email" id="register-email" placeholder="Email" required>
+            <button onclick="register()">Register</button>
+        </div>
+        
+        <div id="login-section" class="section">
+            <h2>Login</h2>
+            <input type="text" id="login-username" placeholder="Username" required>
+            <input type="password" id="login-password" placeholder="Password" required>
+            <button onclick="login()">Login</button>
+        </div>
+
+        <div id="profile-section" class="section" style="display:none;">
+            <h2>User Profile</h2>
+            <div id="profile-data" style="border: 1px solid #ccc; padding: 10px; border-radius: 5px;"></div>
+            <button onclick="logout()">Logout</button>
+        </div>
+        
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
